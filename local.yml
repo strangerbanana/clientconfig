@@ -1,6 +1,6 @@
 - name: Configuration of workstations and laptops
   hosts: localhost
-  gather_facts: no
+  gather_facts: yes
   tasks:
     - name: Install EPEL
       yum:
