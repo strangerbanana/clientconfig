@@ -17,7 +17,6 @@
           - net-tools
           - wget
           - ntp
-          - libselinux-python
           - ipa-client
         state: present
     - name: Enable SELinux
