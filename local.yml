@@ -1,5 +1,5 @@
 - name: Configuration of workstations and laptops
-  hosts: all
+  hosts: localhost
   gather_facts: no
   tasks:
     - name: Install EPEL
