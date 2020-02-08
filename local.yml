@@ -15,8 +15,6 @@
           - iftop
           - net-snmp
           - net-tools
-          - yum-cron
-          - yum-utils
           - wget
           - ntp
           - libselinux-python
