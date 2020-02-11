@@ -1,0 +1,5 @@
+[org/gnome/login-screen]
+banner-message-enable=true
+banner-message-text='Welcome\nLogin using your UNECTIFY credentials.'
+disable-restart-buttons=false
+disable-user-list=true
