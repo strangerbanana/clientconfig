@@ -35,3 +35,11 @@
       copy:
         src: files/gdm.d-01-login-screen
         dest: /etc/dconf/db/gdm.d/01-login-screen
+    - name: Create the GDM DCONF profile
+      copy:
+        src: files/etc-dconf-profile-gdm
+        dest: /etc/dconf/profile/gdm
+      register: dconf
+    - name: Update DCONF if changed
+      shell: dconf update
+      when: dconf.changed
