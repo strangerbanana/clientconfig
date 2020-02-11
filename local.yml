@@ -27,3 +27,11 @@
       yum:
         name: '*'
         state: latest
+    - name: Create the GNOME Display Manager Configuration Directory
+      file:
+        path: /etc/dconf/db/gdm.d
+        state: directory
+    - name: Create a configuration file to hide the user list on the lock screen
+      copy:
+        src: files/gdm.d-01-login-screen
+        dest: /etc/dconf/db/gdm.d/01-login-screen
